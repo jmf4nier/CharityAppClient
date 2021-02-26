@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 })
 
 export default function PlayerBox(props) {
-  console.log(props.players)
+  
   const classes = useStyles()
   const { players } = props
   return (
@@ -33,7 +33,7 @@ export default function PlayerBox(props) {
       <div className={classes.listHolder}>
         <ol className={classes.playerBoard}>
           {players.map((player, index) => {
-            console.log(player)
+            
             return <li key={index}>{player}</li>
           })}
         </ol>
