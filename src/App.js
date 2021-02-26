@@ -20,6 +20,8 @@ const useStyles = makeStyles({
     backgroundColor: 'red',
     marginTop: '2vh',
     borderRadius: '50%',
+    borderStyle:'solid',
+    borderColor:'black',
     height: '20vh',
     width: '20vh',
   },
@@ -33,6 +35,11 @@ const useStyles = makeStyles({
     marginLeft: '1vh',
     marginRight: '1vh',
   },
+  form:{
+    padding: '2vh',
+    borderStyle:'solid',
+    borderWidth:'.1vh'
+  }
 })
 
 function App() {
@@ -106,7 +113,7 @@ function App() {
           </span>
         </h1>
       </div>
-      <div>
+      <div className={classes.form}>
         <form onSubmit={(e) => onNameSubmit(e)}>
           <Grid container spacing={1}>
             <Grid item xs={6}>

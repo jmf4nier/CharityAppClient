@@ -3,7 +3,10 @@ import { makeStyles, Grid } from '@material-ui/core'
 
 const useStyles = makeStyles({
   root: {
-    alignContent:'centered'
+    alignContent:'centered',
+    borderStyle: 'solid',
+    height:'25vh',
+    width: '25vh'
     
   },
   heading: {
